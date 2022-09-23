@@ -1,0 +1,250 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: 	  #D0BCA7;
+    color: #251F1A;
+}
+a{
+  text-decoration: none;
+  color: #251F1A;
+}
+ul{
+  list-style: none;
+}
+.font-q{
+  font-family: quicksand, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+// logo
+.logo >a>img{
+  width: 20%;
+}
+// header
+header{
+  height: 100vh;
+}
+// mainview
+.section_1{
+      // 固定
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10000;
+      background-color: rgb(208, 188, 167,0.8);
+      padding-bottom: 3px;  
+  .main_nav{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    li{
+      padding-left: 3%;
+      a{
+        border-top: solid 5px #801E1E;
+        border-bottom: solid 3px #801E1E;
+      }
+      padding: 24px;
+      max-width: 760px;
+      font-weight: 300;
+      line-height: 1.9;
+    
+      .link-1 {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 1px;
+        transition: color ease 0.3s;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 5%;
+          left: 0;
+          bottom: 0;
+          transition: all ease 0.3s;
+        }
+        
+        &:hover {
+          color: white;
+          
+          &::after {
+            height: 100%;
+          }
+        }
+      } 
+      .link_color1{
+        &::after {
+          background-color: #83725F;
+        }
+      }
+      .link_color2{
+        &::after {
+          background-color: #805C39	;
+        }
+      }
+      .link_color3{
+        &::after {
+          background-color: #71451F;
+        }
+      }
+      .link_color4  {
+        &::after {
+          background-color: #4F2702	;
+        }
+      }
+
+
+
+
+    } 
+
+ 
+
+
+  }
+ }
+// top typing view
+
+.typed_wrap {
+  height: 55vh;
+  text-align: center;
+  z-index: 20;
+ }
+ .typed_wrap h1 {
+   width: 100%;
+   height: 80vh;
+  color: #251F1A;
+  font-size: 1.8rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span{
+    z-index: 25;
+  }
+ }
+ .typed::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+ }
+ @keyframes blink {
+  50%{opacity: 0;}
+ }
+ // section_2 manu
+ .section_2{
+  margin-top:4%;
+  width: 100%;
+  padding-top: 100px;
+  .section_2_pic{
+    width: 100%;
+    position: relative;
+    .section_2_pic1{
+      position: absolute;
+      left: 0;
+      top: 15%;
+      width: 90%;
+      img{
+        width: 100%;
+      }
+    }
+    .section_2_pic2{
+      width: 90%;
+      height: 80vh;
+      background-image: url(../img/background1.png);
+      width: 80%;
+      background-size: cover;
+      img{
+        width: 100%;
+      }
+    }
+    .section_2_pic3{
+      position: absolute;
+      top: -14%;
+      right:  7%;
+      width: 13%;
+      z-index: 11;
+      moz-transform: rotate(10deg);
+      -webkit-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      img{
+        width: 100%;
+      }
+
+    }
+    .section_2_pic4{
+      position: absolute;
+      top: 3%;
+      right:  0;
+      width: 12%;
+      z-index: 10;
+      img{
+        width: 100%;
+      }
+    }
+
+  }
+ }
+ @media screen and (max-width :767px){
+  .logo{
+    text-align: center;
+    &   >a img{
+      width: 43%;
+    }
+  }
+
+  header{
+    height: 70vh;
+    .section_1{
+      .main_nav{
+        justify-content: space-around;
+      }
+    }
+
+  }
+  .typed_wrap h1 {
+    height: 50vh;
+    width: 85%;
+    margin: auto;
+  }
+  .section_2{
+    .section_2_pic{
+      height: 54vh;
+      .section_2_pic2{
+        height: 50vh;
+        width: 100%;
+        background-image: url(../img/sp_background.png);
+      }
+      .section_2_pic3{
+        top: auto;
+        bottom: -14%;
+        right: 77%;
+        moz-transform: rotate(-44deg);
+        -webkit-transform: rotate(-44deg);        
+        -o-transform: rotate(-44deg);
+        -ms-transform: rotate(-44deg);
+        width: 19%;
+      }
+      .section_2_pic4{
+        top: auto;
+        bottom: -19%;
+        right: 88%;
+        width: 20%;
+        moz-transform: rotate(-46deg);
+        -webkit-transform: rotate(-46deg);      
+        -o-transform: rotate(-46deg);
+        -ms-transform: rotate(-46deg);
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+}
