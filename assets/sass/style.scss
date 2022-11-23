@@ -75,6 +75,91 @@
 
 
 }
+// section_work
+.section_work{
+  text-align: center;
+  margin-top: 15%;
+  padding-top: 5%;
+  background-color:#fcf9f4;
+  position: relative;
+  padding-bottom: 15%;
+  .section_workpic{
+    width: 30%;
+    img{
+      width: 100%;
+    }
+  }
+  .section_workpic_top{
+    position: absolute;
+    top:-5%;
+    left: 0;
+    z-index: 1;
+  }
+  .section_work_ttl{
+    font-size: 3.8rem;
+    position: absolute;
+    left: 10%;
+    z-index: 9;
+    width: 80%;
+    padding-top: 5%;
+    color: #f2f2f2;
+    text-shadow:1px 1px 0 #5A3A1A, -1px -1px 0 #5A3A1A,
+    -1px 1px 0 #5A3A1A, 1px -1px 0 #5A3A1A,
+    0px 1px 0 #5A3A1A,  0-1px 0 #5A3A1A,
+    -1px 0 0 #5A3A1A, 1px 0 0 #5A3A1A;
+    .section_work_subttl{
+      padding-left: 5%;
+      font-size: 1.8rem;
+      color: #5A3A1A;
+      text-shadow:none;
+    }
+  }
+  .section_work_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section_work_1_1{
+      margin-top: 12%;
+      position: relative;
+      p{
+        text-align: left;
+        margin-bottom: 0;
+        margin-top: 20%;
+        font-size: 1.6rem;
+
+      }
+      .section_work_font-s{
+        font-size: 0.8rem;
+        color: darkblue;
+        margin-top: 0;
+      }
+    }
+  }
+  .section_3_btn{
+    margin-top: 5%;
+    width: 15%;
+    padding: 2%;
+    font-size: 1.2rem;
+    color: #F2F2F2;
+    background-color: #801E1E ;
+    border: none;
+    font-weight: bold;
+    &:hover{
+      color: #F2F2F2;
+      background-color: #801E1E ;
+      color: #333;
+      background-color: #F2F2F2;
+    }
+    .btn_text_s{
+      font-size: 0.8rem;
+    }
+  }
+  .section_workpic_bottom{
+    position: absolute;
+    right: 0;
+    bottom: -15%;
+  }
+}
 
 // section_4
 .section_4{
@@ -335,7 +420,44 @@
       }
     }
   }
-
+  .section_work{
+    margin-top: 32%;
+    .section_workpic{
+      width: 38%;
+    }
+    .section_workpic_top{
+      top: -11%;
+    }
+    .section_work_ttl{
+      font-size: 2rem;
+      width: 100%;
+      left: 0;
+      .section_work_subttl{
+        font-size: 0.8rem;
+      }
+    }
+    .section_work_1{
+      .section_work_1_1{
+        margin-top: 15%;
+        padding-left: 11%;
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+    .section_3_btn{
+      width: 34%;
+      top: 98%;
+      left: 33%;
+      font-size: 0.9rem;
+      .btn_text_s {
+        font-size: 0.6rem;
+      }
+    }
+    .section_workpic_bottom{
+      bottom: -25%;
+    }
+  }
   .section_4{
     padding-top: 21%;
     .fadeIn_left > h2{
@@ -343,6 +465,7 @@
     }
     .sample_contents{
       width: 90%;
+      padding: 0;
       .detail_box{
         flex-direction: column;
         .sample12 {
